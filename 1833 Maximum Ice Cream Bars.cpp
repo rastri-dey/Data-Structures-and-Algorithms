@@ -1,7 +1,7 @@
 /*
 Source: https://leetcode.com/problems/maximum-ice-cream-bars/
 Date: 31 Jan 2024
-Author: Rastri Dey
+Author: Rastri Dey 
 */
 /***********************************************************************************************
 Problem:
