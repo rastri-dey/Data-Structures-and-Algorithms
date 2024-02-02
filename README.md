@@ -11,7 +11,8 @@ LeetCode Algorithms
 | 2410 | [Maximum match players with trainers](https://leetcode.com/problems/maximum-matching-of-players-with-trainers/) | [C++](2410_Max_Match_Players_Trainers.cpp)| O(nlogn + mlogm) | O(logm + logn) | Medium | Greedy Sort|
 | 994 | [Rotting Oranges](https://leetcode.com/problems/rotting-oranges/) | [C++](994_Rotting_Oranges.cpp)| O(n*m) | O(n*m) | Medium | Graph BFS|
 | 990 | [Satisfiability equality equations](https://leetcode.com/problems/satisfiability-of-equality-equations/) | [C++](990_Satisfiability_Equality_Eqns.cpp)| O(n) | O(n) | Medium | DFS Graphs|
-
+| 1372 | [Longest zigzag path in Binary tree](https://leetcode.com/problems/longest-zigzag-path-in-a-binary-tree/) | [C++](1372_Longest_zigzag_path_Binary_Tree.cpp) | O(n) | O(n) | Medium | Binary Tree|
+| 437 | [Path Sum III](https://leetcode.com/problems/path-sum-iii/) | [C++](437_Path_Sum.cpp) | O(n) | O(n) | Medium | Prefix Sum Hashmap, DFS|
 
 
 
