@@ -15,6 +15,6 @@ LeetCode Algorithms
 | 437 | [Path Sum III](https://leetcode.com/problems/path-sum-iii/) | [C++](437_Path_Sum.cpp) | O(n) | O(n) | Medium | Prefix Sum Hashmap, DFS|
 | 2486 | [Append characters to string to make subsequence](https://leetcode.com/problems/append-characters-to-string-to-make-subsequence/) | [C++](2486_Append_Characters_String_Make_Subsequence.cpp)| O(min(n,m)) | O(1) | Medium | Greedy |
 | 2405 | [Optimal Partition String](https://leetcode.com/problems/optimal-partition-of-string/) | [C++](2405_Optimal_Partition_String.cpp) | O(n) | O(1) | Medium | Greedy |
-
+| 2348 | [Largest Pallindromic Number](https://leetcode.com/problems/largest-palindromic-number/) | [C++](2348_Largest_Pallindrome_Num.cpp) | O(n) | O(1) | Medium | Greedy |
 
 
