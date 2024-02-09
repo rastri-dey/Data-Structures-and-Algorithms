@@ -17,4 +17,4 @@ LeetCode Algorithms
 | 2405 | [Optimal Partition String](https://leetcode.com/problems/optimal-partition-of-string/) | [C++](2405_Optimal_Partition_String.cpp) | O(n) | O(1) | Medium | Greedy |
 | 2348 | [Largest Pallindromic Number](https://leetcode.com/problems/largest-palindromic-number/) | [C++](2348_Largest_Pallindrome_Num.cpp) | O(n) | O(1) | Medium | Greedy |
 | 2250 | [Count number of rectangles containing each point](https://leetcode.com/problems/count-number-of-rectangles-containing-each-point/) | [C++](2250_Count_Rectangles_containing_Point.cpp) | O(n+100+ m*100*logn) | O(n)| Medium | Binary Search, Hashmap |
-
+| 1533 | [Find index of large integer](https://leetcode.com/problems/find-the-index-of-the-large-integer/) | [C++](1533_find_index_large_integer.cpp) | O(logn) | O(1)| Medium-Premium | Binary Search |
