@@ -20,3 +20,4 @@ This is my page for solutions to Leetcode problems in C++. It covers the usage o
 | 1533 | [Find index of large integer](https://leetcode.com/problems/find-the-index-of-the-large-integer/) | [C++](1533_find_index_large_integer.cpp) | O(logn) | O(1)| Medium-Premium | Binary Search |
 | 967 | [Numbers with same consecutive differences](https://leetcode.com/problems/numbers-with-same-consecutive-differences/) | [C++](967_numbers_with_same_consecutive_differences.cpp)| O(2^n) | O(n) | Medium | Backtracking, DFS |
 | 216 | [Combination sum iii](https://leetcode.com/problems/combination-sum-iii/) | [C++](216_Combination_Sum_iii.cpp)| O(P(9,K)*K) | O(K) | Medium | Backtracking, DFS | P(*): Permutation |
+| 387 | [First unique character in string](https://leetcode.com/problems/first-unique-character-in-a-string/) | [C++](387_First_unique_charater.cpp)| O(n) | O(1) | Easy | Linear Pass, Hashmap | |
