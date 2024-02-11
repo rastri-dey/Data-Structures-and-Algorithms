@@ -21,3 +21,4 @@ This is my page for solutions to Leetcode problems in C++. It covers the usage o
 | 967 | [Numbers with same consecutive differences](https://leetcode.com/problems/numbers-with-same-consecutive-differences/) | [C++](967_numbers_with_same_consecutive_differences.cpp)| O(2^n) | O(n) | Medium | Backtracking, DFS |
 | 216 | [Combination sum iii](https://leetcode.com/problems/combination-sum-iii/) | [C++](216_Combination_Sum_iii.cpp)| O(P(9,K)*K) | O(K) | Medium | Backtracking, DFS | P(*): Permutation |
 | 387 | [First unique character in string](https://leetcode.com/problems/first-unique-character-in-a-string/) | [C++](387_First_unique_charater.cpp)| O(n) | O(1) | Easy | Linear Pass, Hashmap | |
+| 128 | [Longest consecutive sequence](https://leetcode.com/problems/longest-consecutive-sequence/) | [C++](128_Longest_Consecutive_Sequence.cpp)| O(n) | O(n) | Medium | Hashset sequence build| Tricky |
