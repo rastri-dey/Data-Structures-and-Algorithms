@@ -23,5 +23,5 @@ This is my page for solutions to Leetcode problems in C++. It covers the usage o
 | 387 | [First unique character in string](https://leetcode.com/problems/first-unique-character-in-a-string/) | [C++](387_First_unique_charater.cpp)| O(n) | O(1) | Easy | Linear Pass, Hashmap | |
 | 128 | [Longest consecutive sequence](https://leetcode.com/problems/longest-consecutive-sequence/) | [C++](128_Longest_Consecutive_Sequence.cpp)| O(n) | O(n) | Medium | Hashset sequence build| Tricky |
 | 695 | [Max area of island](https://leetcode.com/problems/max-area-of-island/) | [C++](695_Max_Area_Of_Island.cpp)| O(R*C) | O(R*C) | Medium | DFS |  |
-| 47 | [Permutations II](https://leetcode.com/problems/permutations-ii/) | [C++](47_Permutations_ii.cpp)| O(Sum(P(N,k))) | O(N) | Medium | Backtracking | P(*): Permutation, Sum: Sum of all P(*)|
+| 47 | [Permutations II](https://leetcode.com/problems/permutations-ii/) | [C++](47_Permutations_ii.cpp)| O(Sum(P(N,k))) | O(N) | Medium | Backtracking | Sum: sum of all P(*)|
 | 40 | [Combination sum II](https://leetcode.com/problems/combination-sum-ii/) | [C++](40_Combination_Sum_II.cpp)| O(2^N) | O(N) | Medium | Backtracking | Tricky |
