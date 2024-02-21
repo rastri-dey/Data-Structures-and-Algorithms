@@ -26,3 +26,4 @@ This is my page for solutions to Leetcode problems in C++. It covers the usage o
 | 47 | [Permutations II](https://leetcode.com/problems/permutations-ii/) | [C++](47_Permutations_ii.cpp)| O(Sum(P(N,k))) | O(N) | Medium | Backtracking | Sum: sum of all P(*)|
 | 40 | [Combination sum II](https://leetcode.com/problems/combination-sum-ii/) | [C++](40_Combination_Sum_II.cpp)| O(2^N) | O(N) | Medium | Backtracking | Tricky |
 | 2305 | [Fair distribution Cookies](https://leetcode.com/problems/fair-distribution-of-cookies/) | [C++](2305_Fair_distribution_cookies.cpp)| O(K^N) | O(K+N) | Medium | Backtracking |  |
+| 79 | [Word search](https://leetcode.com/problems/word-search/) | [C++](79_Word_Search.cpp)| O(N*3^L) | O(L) | Medium | Backtracking |  |
