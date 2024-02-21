@@ -1,5 +1,5 @@
 # Data Structures & Algorithms
-This is my page for solutions to Leetcode problems in C++. It covers the usage of various data structures & algorithms. I upload new solutions to coding problems (almost) daily. The table below illustartes the code details further.
+This is my page for solutions to Leetcode problems in C++. It covers the usage of Trees, Graphs, Binary Search, Dynamic Programming etc. The table below illustartes the code details further:
 
 | # | Problem | My Solution | Time | Space | Diffculty | Strategy | Notes |
 | --- | --- | --- | --- | --- | --- | --- | --- |
