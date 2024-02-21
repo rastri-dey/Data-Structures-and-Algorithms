@@ -1,5 +1,5 @@
 # Data Structures & Algorithms
-This is my page for solutions to Leetcode problems in C++. It covers the usage of Trees, Graphs, Binary Search, Dynamic Programming etc. The table below illustartes the code details further.
+This is my page for solutions to Leetcode problems in C++. It covers the usage of various data structures & algorithms. I upload new solutions to coding problems (almost) daily. The table below illustartes the code details further.
 
 | # | Problem | My Solution | Time | Space | Diffculty | Strategy | Notes |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -25,3 +25,4 @@ This is my page for solutions to Leetcode problems in C++. It covers the usage o
 | 695 | [Max area of island](https://leetcode.com/problems/max-area-of-island/) | [C++](695_Max_Area_Of_Island.cpp)| O(R*C) | O(R*C) | Medium | DFS |  |
 | 47 | [Permutations II](https://leetcode.com/problems/permutations-ii/) | [C++](47_Permutations_ii.cpp)| O(Sum(P(N,k))) | O(N) | Medium | Backtracking | Sum: sum of all P(*)|
 | 40 | [Combination sum II](https://leetcode.com/problems/combination-sum-ii/) | [C++](40_Combination_Sum_II.cpp)| O(2^N) | O(N) | Medium | Backtracking | Tricky |
+| 2305 | [Fair distribution Cookies](https://leetcode.com/problems/fair-distribution-of-cookies/) | [C++](2305_Fair_distribution_cookies.cpp)| O(K^N) | O(K+N) | Medium | Backtracking |  |
