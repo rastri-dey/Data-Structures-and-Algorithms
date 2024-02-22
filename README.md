@@ -28,3 +28,4 @@ This is my page for solutions to Leetcode problems in C++. It covers the usage o
 | 2305 | [Fair distribution Cookies](https://leetcode.com/problems/fair-distribution-of-cookies/) | [C++](2305_Fair_distribution_cookies.cpp)| O(K^N) | O(K+N) | Medium | Backtracking |  |
 | 79 | [Word search](https://leetcode.com/problems/word-search/) | [C++](79_Word_Search.cpp)| O(N*3^L) | O(L) | Medium | Backtracking |  |
 | 1415 | [kth lexicographical string of happy strings](https://leetcode.com/problems/the-k-th-lexicographical-string-of-all-happy-strings-of-length-n/) | [C++](1415_kth_lexicographical_string.cpp)| O(3*2^(N-1)) | O(N*K) | Medium | Backtracking |  |
+| 491 | [Non-Decreasing Subsequences](https://leetcode.com/problems/non-decreasing-subsequences/) | [C++](491_Non_Decreasing_Subsequences.cpp)| O(2^N * N^2) | O(N) | Medium | Backtracking |  |
