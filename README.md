@@ -30,3 +30,4 @@ This is my page for solutions to Leetcode problems in C++. It covers the usage o
 | 1415 | [kth lexicographical string of happy strings](https://leetcode.com/problems/the-k-th-lexicographical-string-of-all-happy-strings-of-length-n/) | [C++](1415_kth_lexicographical_string.cpp)| O(3*2^(N-1)) | O(N*K) | Medium | Backtracking |  |
 | 491 | [Non Decreasing Subsequences](https://leetcode.com/problems/non-decreasing-subsequences/) | [C++](491_Non_Decreasing_Subsequences.cpp)| O(2^N * N^2) | O(N) | Medium | Backtracking |  |
 | 93 | [Restore ip addresses](https://leetcode.com/problems/restore-ip-addresses/) | [C++](93_Restore_IP_Addresses.cpp)| O(M^N*N) | O(M*N) | Medium | Backtracking |  |
+| 198 | [House Robber](https://leetcode.com/problems/house-robber/description/) | [C++](198_House)| O(M^N*N) | O(M*N) | Medium | Backtracking |  |
