@@ -29,7 +29,7 @@ Constraints:
 
 Approach: Dynamic Programming (Iterative Bottom Up)
 Time: O(N)
-Space: O(N) : No Recursive Stack space is used. But there is N-size array used for iterative loop.
+Space: O(1) : No Recursive Stack space. Constant space.
 '''
 class Solution:
     def rob(self, nums: List[int]) -> int:
