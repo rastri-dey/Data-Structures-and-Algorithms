@@ -1,9 +1,9 @@
-/*
+'''
 Source: https://leetcode.com/problems/house-robber/description/
 Date: 09 June 2024
 Author: Rastri Dey 
-*/
-/************************************************************************************
+
+************************************************************************************
 You are a professional robber planning to rob houses along a street. Each house has a certain amount of money stashed, the only constraint stopping you from robbing each of them is that adjacent houses have security systems connected and it will automatically contact the police if two adjacent houses were broken into on the same night.
 
 Given an integer array nums representing the amount of money of each house, return the maximum amount of money you can rob tonight without alerting the police.
@@ -25,25 +25,20 @@ Constraints:
 
 1 <= nums.length <= 100
 0 <= nums[i] <= 400
-*************************************************************************************/
+*************************************************************************************
 
-// Approach: Dynamic Programming (Iterative Bottom Up)
-// Time: O(n)
-// Space: O(n)
-class Solution {
-public:
-    int rob(vector<int>& nums) {
-        int n = nums.size();
-        vector<int> dp(n+1);
-        // At the last house, there is nothing to rob
-        dp[n] = 0;
-        // At the 2nd last house, only the last house can be robbed
-        dp[n-1] = nums[n-1];
-        // Rob max of either the current(i) & (i+2) house, as no 2 adjacent house can be robbed
-        // Or rob just max until the next house 
-        for(int i=n-2; i>=0; i--){
-            dp[i] = max(nums[i]+dp[i+2], dp[i+1]);
-        }
-        return dp[0];
-    }
-};
+Approach: Dynamic Programming (Iterative Bottom Up)
+Time: O(N)
+Space: O(N) : No Recursive Stack space is used. But there is N-size array used for ietrative loop.
+'''
+class Solution:
+    def rob(self, nums: List[int]) -> int:
+        N = len(nums)
+        maxRobAmt = [None for _ in range(N+1)]
+
+        maxRobAmt[N], maxRobAmt[N-1] = 0, nums[N-1]
+
+        for i in range(N-2, -1, -1):
+            maxRobAmt[i] = max(nums[i]+maxRobAmt[i+2], maxRobAmt[i+1])
+
+        return maxRobAmt[0]
