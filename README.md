@@ -1,7 +1,7 @@
 # Data Structures & Algorithms
-This is my page for solutions to Leetcode problems in C++. It covers the usage of Trees, Graphs, Binary Search, Dynamic Programming etc. The table below illustrates the code details further:
+This is the solutions page to Leetcode problems. It covers the usage of Trees, Graphs, Binary Search, Dynamic Programming etc. The table below illustrates the code details further:
 
-| # | Problem | My Solution | Time | Space | Diffculty | Strategy | Notes |
+| # | Problem | Solution | Time | Space | Diffculty | Strategy | Notes |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | 1833 | [Maximum Ice Cream Bar](https://leetcode.com/problems/maximum-ice-cream-bars/) | [C++](/1833_Maximum_Ice_Cream_Bars.cpp) | O(m+n) | O(m) | Medium | Greedy, Counting Sort |
 | 409 | [Longest Pallindrome](https://leetcode.com/problems/longest-palindrome/) | [C++](/409_Longest_Pallindrome.cpp) | O(n) | O(1) | Easy | Greedy, HashSet|
@@ -30,4 +30,4 @@ This is my page for solutions to Leetcode problems in C++. It covers the usage o
 | 1415 | [kth lexicographical string of happy strings](https://leetcode.com/problems/the-k-th-lexicographical-string-of-all-happy-strings-of-length-n/) | [C++](1415_kth_lexicographical_string.cpp)| O(3*2^(N-1)) | O(N*K) | Medium | Backtracking |  |
 | 491 | [Non Decreasing Subsequences](https://leetcode.com/problems/non-decreasing-subsequences/) | [C++](491_Non_Decreasing_Subsequences.cpp)| O(2^N * N^2) | O(N) | Medium | Backtracking |  |
 | 93 | [Restore ip addresses](https://leetcode.com/problems/restore-ip-addresses/) | [C++](93_Restore_IP_Addresses.cpp)| O(M^N*N) | O(M*N) | Medium | Backtracking |  |
-| 198 | [House Robber](https://leetcode.com/problems/house-robber/description/) | [C++](198_House_Robber.cpp) , [Optimized Space C++](198_House_Robber_ans2.cpp)| O(N) | O(N), O(1) | Medium | Dynamic Programming | Iterative Bottom Up |
+| 198 | [House Robber](https://leetcode.com/problems/house-robber/description/) | [C++](198_House_Robber.cpp) , [Optimized Space C++](198_House_Robber_ans2.cpp), [Python](198_House_Robber_ans.py)| O(N) | O(N), O(1), O(N) | Medium | Dynamic Programming | Iterative Bottom Up |
