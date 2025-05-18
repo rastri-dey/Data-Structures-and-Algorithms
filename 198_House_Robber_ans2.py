@@ -27,9 +27,9 @@ Constraints:
 0 <= nums[i] <= 400
 *************************************************************************************
 
-Approach: Dynamic Programming (Iterative Bottom Up)
+Approach: Optimized Dynamic Programming
 Time: O(N)
-Space: O(1) : No Recursive Stack space. Constant space.
+Space: O(1) : No Recursive Stack. Constant space.
 '''
 class Solution:
     def rob(self, nums: List[int]) -> int:
