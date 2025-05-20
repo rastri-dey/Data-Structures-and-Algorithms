@@ -43,7 +43,7 @@ Constraints:
 
 # Approach: Top Down using Recursion & Memoization (Use @cache wrapper for automatic memoization)
 # Time: O(N)
-# Space: O(N) Recursive Call stack
+# Space: O(N) Recursive Call Stack
 
 '''
 class Solution:
