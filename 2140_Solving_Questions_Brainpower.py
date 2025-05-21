@@ -71,7 +71,8 @@ class Solution:
         dp = [0] * (N+1)
         # Take dp length as N+1, to handle dp[i+1] initialization to start with 0
         # Take min of skip questions and question length to handle overflowing
-        # Rest repeat the same as Top Down, just doing it in reverse order to handle max value comparison for existing dp
+        # Rest repeat the same as Top Down, just doing it in reverse order,
+        # to handle max value comparison for existing dp
         for i in range(N-1,-1,-1):
             dp[i] = max(questions[i][0] + dp[min(i + questions[i][1] + 1, N)], dp[i+1])
 
