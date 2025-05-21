@@ -60,3 +60,19 @@ class Solution:
             return max((questions[i][0] + dp(i + questions[i][1] + 1)), dp(i+1))
 
         return dp(0)
+    
+# Approach: Bottom Up Iterative
+# Time: O(N)
+# Space: O(N)
+
+class Solution:
+    def mostPoints(self, questions: List[List[int]]) -> int:
+        N = len(questions)
+        dp = [0] * (N+1)
+        # Take dp length as N+1, to handle dp[i+1] initialization to start with 0
+        # Take min of skip questions and question length to handle overflowing
+        # Rest repeat the same as Top Down, just doing it in reverse order
+        for i in range(N-1,-1,-1):
+            dp[i] = max(questions[i][0] + dp[min(i + questions[i][1] + 1, N)], dp[i+1])
+
+        return dp[0]
