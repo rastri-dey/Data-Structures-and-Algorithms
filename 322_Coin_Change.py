@@ -35,7 +35,7 @@ Constraints:
 ************************************************************************************
 
 # Approach: Dynamic Programming Top Down with Depth-First Search recursive tree
-# Time: O(S*N) : S is for depth of the tree, N is for breadth of the tree  
+# Time: O(S*N) : S (amount) is for depth of the tree, N (size of coins List) is for breadth of the tree  
 # Space: O(S) : Recursive tree
 
 '''
@@ -43,7 +43,7 @@ Constraints:
 class Solution:
     def coinChange(self, coins: List[int], amount: int) -> int:
         @cache
-        def dfs(rem):
+        def dfs(rem: int) -> int:
             if (rem == 0):
                 return 0
             if (rem < 0):
@@ -54,6 +54,7 @@ class Solution:
             # Gets into the depth of one branch until the rem becomes 0
             # Starts calculating the count for coins from bottom when it is at a leaf node
             # After reaching the leaf node, rem becomes 0, and res becomes positive
+
             # Minimum cost calculation is done along breadth
             # At a particular node once all the breadth wise calculations are done - 
             # one for loop iteration is done and the minimum cost along breadth is returned to the dfs node prior to that
@@ -66,6 +67,4 @@ class Solution:
             
             return min_cost if min_cost != float('inf') else -1
 
-        return dfs(amount)
-
-        
+        return dfs(amount)      
