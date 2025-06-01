@@ -58,3 +58,24 @@ class Solution:
                 return max(dp(i+1, stock_hold, remain), prices[i]+dp(i+1, 1-stock_hold, remain-1))
 
         return dp(0, 0, k)
+    
+# Approach: Bottom Up Iterative
+# Time: O(N*K)
+# Space: O(N*K)
+
+class Solution:
+    def maxProfit(self, k: int, prices: List[int]) -> int:
+        N = len(prices)
+       
+        dp = [[[0]*(k+1) for _ in range(2)] for _ in range(N+1)]
+
+        # For iterative solution, always start with the base case first
+        for i in range(N-1, -1, -1):
+            for j in range(1, k+1):
+                for l in range(2):
+                    if l == 0:
+                        dp[i][l][j] = max(dp[i+1][l][j], -prices[i]+dp[i+1][1][j])
+                    else:
+                        dp[i][l][j] = max(dp[i+1][l][j], prices[i]+dp[i+1][0][j-1])
+        
+        return dp[0][0][k]
