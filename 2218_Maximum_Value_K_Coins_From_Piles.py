@@ -34,6 +34,8 @@ n == piles.length
 
 ************************************************************************************
 '''
+# Approach: Top Down
+
 from functools import cache
 class Solution:
     def maxValueOfCoins(self, piles: List[List[int]], k: int) -> int:
@@ -52,3 +54,21 @@ class Solution:
                 ans = max(ans, curr+dp(o+1, remain-i-1))
             return ans
         return dp(0,k)
+    
+ # Approach: Bottom Up  
+      
+class Solution:
+    def maxValueOfCoins(self, piles: List[List[int]], k: int) -> int:
+        N = len(piles)
+        dp = [[0]*(k+1) for _ in range(N+1)]
+
+        for o in range(N-1,-1,-1):
+            for remain in range(1,k+1):
+                j = min(len(piles[o]),remain)
+                dp[o][remain] = dp[o+1][remain]
+                curr = 0
+                for i in range(j):
+                    curr += piles[o][i]
+                    dp[o][remain] = max(dp[o][remain], curr + dp[o + 1][remain - i - 1])
+
+        return dp[0][k]
