@@ -53,4 +53,25 @@ class Solution:
                 return max(prices[i]+dp(i+2,0), dp(i+1,hold))
 
         return dp(0,0)
+
+# Approach: Bottom Up
+# Time: O(N)
+# Space: O(N)
+
+class Solution:
+    def maxProfit(self, prices: List[int]) -> int:
+        N = len(prices)
+        # Always take the max size of iteration from the inner loop (here N+2)
+        dp = [[0]*2 for _ in range(N+2)]
+
+        for i in range(N-1,-1,-1):
+            for j in range(2):
+                if(j==0):
+                    # Buy or Skip
+                    dp[i][j] = max(-prices[i]+dp[i+1][1], dp[i+1][j])
+                else:
+                    # Sell & cooldown or Skip
+                    dp[i][j] = max(prices[i]+dp[i+2][0], dp[i+1][j])
+
+        return dp[0][0]
         
