@@ -64,4 +64,26 @@ class Solution:
                 # Skip or Sell (with fee)
                 return max(dp(i+1, hold), prices[i]-fee+dp(i+1, 1-hold))
 
-        return dp(0,0)      
+        return dp(0,0)   
+
+# Approach: Bottom Up
+# Time: O(N)
+# Space: O(N)
+from functools import cache
+class Solution:
+    def maxProfit(self, prices: List[int], fee: int) -> int:
+        # At every i: what to do (either skip or based on hold sell/buy)
+        # Output is max profit
+        N = len(prices)
+        dp  = [[0]*2 for _ in range(N+1)]
+
+        for i in range(N-1,-1,-1):
+            for j in range(2):
+                if j == 0:
+                    # Skip or Buy
+                    dp[i][j] = max(dp[i+1][j], -prices[i]+dp[i+1][1])
+                else:
+                    # Skip or Sell (with fee)
+                    dp[i][j] = max(dp[i+1][j], prices[i]-fee+dp[i+1][0])
+
+        return dp[0][0]      
