@@ -81,4 +81,30 @@ class Solution:
                 if j==0:
                     dp[i][j] = grid[i][j] + dp[i-1][j]
         
-        return dp[m-1][n-1]           
+        return dp[m-1][n-1]   
+
+# Approach: Dynamic Programming Matrix (Constant Space) -> 
+# Although not a good idea to alter the variables given in the problem itself. 
+# The answer should not use variable in the problem, unless the variable is not being 
+# called by any other function and changing the variable won't impact any other area.
+
+# Time: O(N*M)
+# Space: O(1) Constant Space
+
+class Solution:
+    def minPathSum(self, grid: List[List[int]]) -> int:
+        m = len(grid)
+        n = len(grid[0])
+       
+        for i in range(m):
+            for j in range(n):
+                if i==0 and j==0:
+                    continue
+                if i>0 and j>0:
+                    grid[i][j] += min(grid[i-1][j], grid[i][j-1])
+                if i==0:
+                    grid[i][j] += grid[i][j-1]
+                if j==0:
+                    grid[i][j] += grid[i-1][j]
+       
+        return grid[m-1][n-1]            
