@@ -55,4 +55,30 @@ class Solution:
             if (row==0):
                 return grid[row][col] + dp(row, col-1)
             
-        return dp(m-1,n-1)        
+        return dp(m-1,n-1)  
+
+# Approach: Dynamic Programming Matrix (Bottom Up)
+# Time: O(N*M)
+# Space: O(N*M)
+
+class Solution:
+    def minPathSum(self, grid: List[List[int]]) -> int:
+        m = len(grid)
+        n = len(grid[0])
+
+        dp = [[0]*n for _ in range(m)]
+        dp[0][0] = grid[0][0]
+        
+        # Always start with your base cases from top down in bottom up
+        for i in range(m):
+            for j in range(n):
+                if i==0 and j==0:
+                    continue
+                if i>0 and j>0:
+                    dp[i][j] = grid[i][j] + min(dp[i-1][j], dp[i][j-1])
+                if i==0:
+                    dp[i][j] = grid[i][j] + dp[i][j-1]
+                if j==0:
+                    dp[i][j] = grid[i][j] + dp[i-1][j]
+        
+        return dp[m-1][n-1]           
