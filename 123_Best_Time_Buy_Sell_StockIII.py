@@ -58,3 +58,23 @@ class Solution:
                 return max(prices[i]+dp(i+1,1-hold,k-1), dp(i+1,hold, k))
         
         return dp(0,0,2)
+    
+# Approach: Bottom Up
+# Time: O(N)
+# Space: O(N)
+
+class Solution:
+    def maxProfit(self, prices: List[int]) -> int:
+        N = len(prices)
+        dp = [[[0]*(3) for _ in range(2)] for _ in range(N+1)]
+
+        for i in range(N-1,-1,-1):    
+            for hold in range(2):
+                for k in range(1,3):
+                    if hold==0:
+                        dp[i][hold][k] = max(-prices[i]+dp[i+1][1][k], dp[i+1][0][k])
+                    else:
+                        dp[i][hold][k] = max(prices[i]+dp[i+1][0][k-1], dp[i+1][1][k])
+
+        return dp[0][0][2]
+        
