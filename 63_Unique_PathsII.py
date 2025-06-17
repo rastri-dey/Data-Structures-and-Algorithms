@@ -36,7 +36,7 @@ obstacleGrid[i][j] is 0 or 1
 
 ************************************************************************************
 '''
-# Approach: Recursive Memoization (Not a DP)
+# Approach: Recursive Memoization 
 # Time: O(M*N)
 # Space: O(M*N)
 
@@ -66,7 +66,7 @@ class Solution:
         
         return memo(m-1,n-1)
 
-# Approach: Tabulation (Not a DP)
+# Approach: Tabulation
 # Time: O(M*N)
 # Space: O(M*N)
 
