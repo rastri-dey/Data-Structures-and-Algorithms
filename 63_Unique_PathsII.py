@@ -66,4 +66,32 @@ class Solution:
         
         return memo(m-1,n-1)
 
-        
+# Approach: Tabulation (Not a DP)
+# Time: O(M*N)
+# Space: O(M*N)
+
+class Solution:
+    def uniquePathsWithObstacles(self, obstacleGrid: List[List[int]]) -> int:
+        m = len(obstacleGrid)
+        n = len(obstacleGrid[0])
+        memo = [[0]*n for _ in range(m)]
+
+        for row in range(m):
+            for col in range(n):
+                if (row == 0 and col == 0 and obstacleGrid[row][col]==0):
+                    memo[row][col] = 1
+                    continue
+
+                if (obstacleGrid[row][col]==1):
+                    continue
+            
+                if(row>0 and col>0):
+                    memo[row][col] = memo[row][col-1] + memo[row-1][col]
+
+                if (row==0):
+                    memo[row][col] = memo[row][col-1]
+            
+                if (col==0):
+                    memo[row][col] = memo[row-1][col]
+                    
+        return memo[m-1][n-1]        
