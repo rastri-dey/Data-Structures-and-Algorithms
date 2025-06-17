@@ -109,7 +109,8 @@ class Solution:
        
         return grid[m-1][n-1]   
 
-# Approach: Dynamic Programming Matrix (Better than quadratic space - Most optimal with the problem constraints) 
+# Approach: Dynamic Programming Matrix (Better than Quadratic space - 
+# Most optimal with the given problem constraints) 
 # Time: O(N*M)
 # Space: O(N) (Linear)
 
