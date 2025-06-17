@@ -107,4 +107,29 @@ class Solution:
                 if j==0:
                     grid[i][j] += grid[i-1][j]
        
-        return grid[m-1][n-1]            
+        return grid[m-1][n-1]   
+
+# Approach: Dynamic Programming Matrix (Better than quadratic space - Most optimal with the problem constraints) 
+# Time: O(N*M)
+# Space: O(N) (Linear)
+
+
+class Solution:
+    def minPathSum(self, grid: List[List[int]]) -> int:
+        m = len(grid)
+        n = len(grid[0])
+        dp = [0 for _ in range(n)]
+        dp[0] = grid[0][0]
+        for i in range(m):
+            dp_last = dp
+            for j in range(n):
+                if i==0 and j==0:
+                    continue
+                if i>0 and j>0:
+                    dp[j] = grid[i][j] + min(dp[j-1], dp_last[j])
+                if i==0:
+                    dp[j] = grid[i][j] + dp[j-1]
+                if j==0:
+                    dp[j] = grid[i][j] + dp_last[j]
+       
+        return dp[n-1]             
