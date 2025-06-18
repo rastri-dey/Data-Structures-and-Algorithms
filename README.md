@@ -44,4 +44,4 @@ This is the solutions page to Leetcode problems. It covers the usage of Trees, G
 | 123 | [Best Time to Buy and Sell Stock III](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/description/) | [Python](123_Best_Time_Buy_Sell_StockIII.py)| O(N) | O(N) | Hard | Dynamic Programming ||
 | 62 | [Unique Paths](https://leetcode.com/problems/unique-paths/description/) | [Python](62_Unique_Paths.py)| O(M*N) | O(M*N) | Medium | Memoization, Tabulation | Not a DP|
 | 64 | [Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/description/) | [Python](64_Minimum_Path_Sum.py)| O(M*N) | O(M*N), O(1), O(N) | Medium | Dynamic Programming Matrix| |
-| 63 | [Unique Paths II](https://leetcode.com/problems/unique-paths-ii/description/) | [Python](63_Unique_PathsII.py)| O(M*N) | O(M*N) | Medium | Memoization, Tabulation | |
+| 63 | [Unique Paths II](https://leetcode.com/problems/unique-paths-ii/description/) | [Python](63_Unique_PathsII.py)| O(M*N) | O(M*N) | Medium | Memoization, Tabulation ||
