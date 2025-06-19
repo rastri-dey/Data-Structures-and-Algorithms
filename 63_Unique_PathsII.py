@@ -94,4 +94,44 @@ class Solution:
                 if (col==0):
                     memo[row][col] = memo[row-1][col]
                     
-        return memo[m-1][n-1]        
+        return memo[m-1][n-1]  
+
+# Approach: Iterative Tabulation (Linear Space)
+# Time: O(M*N)
+# Space: O(N)
+
+class Solution:
+    def uniquePathsWithObstacles(self, obstacleGrid: List[List[int]]) -> int:
+        m = len(obstacleGrid)
+        n = len(obstacleGrid[0])
+        memo = [0 for _ in range(n)]
+
+        if obstacleGrid[0][0]==1 or obstacleGrid[m-1][n-1]==1:
+            return 0
+        
+        memo[0] = 1
+
+        for row in range(m):
+            last_memo = memo                        
+            for col in range(n):
+
+                if(row==0 and col==0):
+                    continue
+
+                if (obstacleGrid[row][col]==1):
+                    # The trick is that last_memo is assigned to memo without knowing the obstacle
+                    # position, so reset it's value here, else the last row's value will get 
+                    # mistakely assigned to current memo
+                    memo[col] = 0
+                    continue
+            
+                if(row>0 and col>0):
+                    memo[col] = memo[col-1] + last_memo[col]
+
+                if (row==0): 
+                    memo[col] = memo[col-1]
+            
+                if (col==0):
+                    memo[col] = last_memo[col]
+      
+        return memo[n-1]              
