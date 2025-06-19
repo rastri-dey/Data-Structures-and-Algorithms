@@ -98,7 +98,7 @@ class Solution:
 
 # Approach: Iterative Tabulation (Linear Space)
 # Time: O(M*N)
-# Space: O(N)
+# Space: O(N) - Linear
 
 class Solution:
     def uniquePathsWithObstacles(self, obstacleGrid: List[List[int]]) -> int:
