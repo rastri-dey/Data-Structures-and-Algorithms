@@ -45,3 +45,4 @@ This is the solutions page to Leetcode problems. It covers the usage of Trees, G
 | 62 | [Unique Paths](https://leetcode.com/problems/unique-paths/description/) | [Python](62_Unique_Paths.py)| O(M*N) | O(M*N) | Medium | Memoization, Tabulation | Not a DP|
 | 64 | [Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/description/) | [Python](64_Minimum_Path_Sum.py)| O(M*N) | O(M*N), O(1), O(N) | Medium | Dynamic Programming Matrix| |
 | 63 | [Unique Paths II](https://leetcode.com/problems/unique-paths-ii/description/) | [Python](63_Unique_PathsII.py)| O(M*N) | O(M*N), O(N) | Medium | Memoization, Tabulation | |
+| 931 | [Minimum falling path sum](https://leetcode.com/problems/minimum-falling-path-sum/description/) | [Python](6931_Minimum_Falling_Path_Sum.py)| O(N^2) | O(N^2) | Medium | Dynamic Programming Matrix with DFS | |
