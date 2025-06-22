@@ -101,5 +101,42 @@ class Solution:
                     dp[row][col] = min(min_sum+dp[row+1][col-1], min_sum+dp[row+1][col], min_sum+dp[row+1][col+1])
 
         return min(dp[0])
+    
+# Approach: Dynamic Programming (Bottom Up) - Linear Space
+# Time: O(N^2)
+# Space: O(N) - Linear
 
+class Solution:
+    def minFallingPathSum(self, matrix: List[List[int]]) -> int:
+
+        n = len(matrix)
+
+        dp = [float('inf') for _ in range(n)]
+        
+        # Base Case
+        for col in range(0,n):
+            dp[col] = matrix[n-1][col]
+        
+        
+        for row in range(n-2,-1,-1):
+
+            # Ensure when you copy, you are not just referencing dp and last_dp
+            # to the same Memory location
+            # Here Shallow copy is sufficient as its just a List of immutable objects
+            # Otherwise consider Deep Copy if there is list of list containing mutable data
+
+            last_dp = dp.copy() # copy.deepcopy(dp): Unnecessary Overhead
+            
+            for col in range(n):
+                if(col==0):
+                    dp[col] = min(matrix[row][col]+last_dp[col], matrix[row][col]+last_dp[col+1])
+                
+                elif (col==n-1):
+                    dp[col] = min(matrix[row][col]+last_dp[col], matrix[row][col]+last_dp[col-1])
+                    
+                else:
+                    min_sum = matrix[row][col]
+                    dp[col] = min(min_sum+last_dp[col-1], min_sum+last_dp[col], min_sum+last_dp[col+1])
+
+        return min(dp)
         
