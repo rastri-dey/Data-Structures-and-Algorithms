@@ -71,4 +71,35 @@ class Solution:
             min_val = min(min_val, dp(0,i))
 
         return min_val
+    
+# Approach: Dynamic Programming (Bottom Up)
+# Time: O(N^2)
+# Space: O(N^2)
+
+class Solution:
+    def minFallingPathSum(self, matrix: List[List[int]]) -> int:
+
+        n = len(matrix)
+
+        dp = [[float('inf')]*(n+1) for _ in range(n+1)]
+        
+        # Base Case
+        for col in range(0,n):
+            dp[n-1][col] = matrix[n-1][col]
+        
+        
+        for row in range(n-2,-1,-1):
+            for col in range(n):
+                if(col==0):
+                    dp[row][col] = min(matrix[row][col]+dp[row+1][col], matrix[row][col]+dp[row+1][col+1])
+                
+                elif (col==n-1):
+                    dp[row][col] = min(matrix[row][col]+dp[row+1][col], matrix[row][col]+dp[row+1][col-1])
+                    
+                else:
+                    min_sum = matrix[row][col]
+                    dp[row][col] = min(min_sum+dp[row+1][col-1], min_sum+dp[row+1][col], min_sum+dp[row+1][col+1])
+
+        return min(dp[0])
+
         
