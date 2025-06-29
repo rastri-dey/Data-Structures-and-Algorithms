@@ -41,7 +41,8 @@ nums2.length == n
 
 ************************************************************************************
 '''
-# Approach: 3 pointers (Fake-In place: what's the point in copying the list, if it has been asked to do it in-place)
+# Approach: 3 pointers - From beginning (Fake-In place: what's the point in copying the list, 
+# if it has been asked to do it in-place)
 # Time: O(N+M)
 # Space: O(M)
 
