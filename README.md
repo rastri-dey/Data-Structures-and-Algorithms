@@ -46,3 +46,4 @@ This is the solutions page to Leetcode problems. It covers the usage of Trees, G
 | 64 | [Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/description/) | [Python](64_Minimum_Path_Sum.py)| O(M*N) | O(M*N), O(1), O(N) | Medium | Dynamic Programming Matrix| |
 | 63 | [Unique Paths II](https://leetcode.com/problems/unique-paths-ii/description/) | [Python](63_Unique_PathsII.py)| O(M*N) | O(M*N), O(N) | Medium | Memoization, Tabulation | |
 | 931 | [Minimum falling path sum](https://leetcode.com/problems/minimum-falling-path-sum/description/) | [Python](931_Minimum_Falling_Path_Sum.py)| O(N^2) | O(N^2), O(N) | Medium | Dynamic Programming Matrix with DFS ||
+| 88 | [Merge sorted array](https://leetcode.com/problems/merge-sorted-array/) | [Python](88_Merge_Sorted_Array.py)| O(N+M) | O(M) | Easy | 3 Pointer||
