@@ -66,3 +66,21 @@ class Solution:
                 last_p+=1
 
         return last_p
+    
+# Approach: 1 Pointer
+# Time: O(N)
+# Space: O(1)
+
+class Solution:
+    def removeElement(self, nums: List[int], val: int) -> int:
+        n = len(nums)
+        i = 0
+        while (i<n):
+            if nums[i]==val:
+                # Swap it with last element - Order of array doesn't matter in result
+                nums[i] = nums[n-1]
+                n-=1
+            else:
+                i+=1
+
+        return n
