@@ -48,4 +48,4 @@ This is the solutions page to Leetcode problems. It covers the usage of Trees, G
 | 931 | [Minimum falling path sum](https://leetcode.com/problems/minimum-falling-path-sum/description/) | [Python](931_Minimum_Falling_Path_Sum.py)| O(N^2) | O(N^2), O(N) | Medium | Dynamic Programming Matrix with DFS ||
 | 88 | [Merge sorted array](https://leetcode.com/problems/merge-sorted-array/) | [Python](88_Merge_Sorted_Array.py)| O(N+M) | O(M), O(1) | Easy | 3 Pointers, 2 Pointers||
 | 27 | [Remove element](https://leetcode.com/problems/remove-element/description/) | [Python](27_Remove_Element.py)| O(N) | O(1) | Easy | Pointers||
-| 151 | [Reverse words in a string](https://leetcode.com/problems/reverse-words-in-a-string/description/) | [Python](151_Reverse_Words_String.py)| O(N) | O(N) | Medium | Pointers||
+| 151 | [Reverse words in a string](https://leetcode.com/problems/reverse-words-in-a-string/description/) | [Python](151_Reverse_Words_String.py)| O(N) | O(N) | Medium | Pointers| |
