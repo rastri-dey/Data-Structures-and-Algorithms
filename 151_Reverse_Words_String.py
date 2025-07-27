@@ -95,3 +95,40 @@ class Solution:
             curr+=1
 
         return "".join(line)
+    
+# Approach: Using Deque
+# Time: O(N)
+# Space: O(N)
+
+from collections import deque
+
+class Solution:
+    def reverseWords(self, s: str) -> str:
+        l, r = 0, len(s)-1
+
+        # Remove leading space
+        while(l<=r and s[l]==' '):
+            l+=1
+
+        # Remove trailing space
+        while(l<=r and s[r]==' '):
+            r-=1
+
+        # d is Deque of single string
+        # word is list of characters
+        word, d = [], deque()
+
+        while(l<=r):
+            if (s[l]==' ' and word):
+                # join the list of characters in a single string
+                # ['h', 'e', 'l', 'l', 'o'], "".join(word) would 
+                # result  in the string "hello"
+                d.appendleft("".join(word))
+                word = []
+
+            elif(s[l]!=' '):
+                word.append(s[l])
+            l+=1
+        d.appendleft("".join(word))
+        return " ".join(d)
+       
