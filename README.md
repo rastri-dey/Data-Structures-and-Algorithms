@@ -49,3 +49,4 @@ This is the solutions page to Leetcode problems. It covers the usage of Trees, G
 | 88 | [Merge sorted array](https://leetcode.com/problems/merge-sorted-array/) | [Python](88_Merge_Sorted_Array.py)| O(N+M) | O(M), O(1) | Easy | 3 Pointers, 2 Pointers||
 | 27 | [Remove element](https://leetcode.com/problems/remove-element/description/) | [Python](27_Remove_Element.py)| O(N) | O(1) | Easy | Pointers||
 | 151 | [Reverse words in a string](https://leetcode.com/problems/reverse-words-in-a-string/description/) | [Python](151_Reverse_Words_String.py)| O(N) | O(N) | Medium | Pointers, Deque| |
+| 125 | [Valid palindrome](https://leetcode.com/problems/valid-palindrome/description/) | [Python](125_Valid_Palindrome.py)| O(N) | O(1) | Easy |Pointers| |
