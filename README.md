@@ -51,3 +51,4 @@ This is the solutions page to Leetcode problems. It covers the usage of Trees, G
 | 151 | [Reverse words in a string](https://leetcode.com/problems/reverse-words-in-a-string/description/) | [Python](151_Reverse_Words_String.py)| O(N) | O(N) | Medium | Pointers, Deque| |
 | 125 | [Valid palindrome](https://leetcode.com/problems/valid-palindrome/description/) | [Python](125_Valid_Palindrome.py)| O(N) | O(1) | Easy |Pointers| |
 | 392 | [Is Subsequence](https://leetcode.com/problems/is-subsequence/description/) | [Python](392_Is_Subsequence.py)| O(N) | O(1) | Easy |Pointers| |
+| 26 | [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/) | [Python](26_Remove_Duplicates_Sorted_Array.py)| O(N) | O(1) | Easy |Pointers| |
