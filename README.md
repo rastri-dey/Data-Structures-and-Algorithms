@@ -52,4 +52,4 @@ This is the solutions page to Leetcode problems. It covers the usage of Trees, G
 | 125 | [Valid palindrome](https://leetcode.com/problems/valid-palindrome/description/) | [Python](125_Valid_Palindrome.py)| O(N) | O(1) | Easy |Pointers| |
 | 392 | [Is Subsequence](https://leetcode.com/problems/is-subsequence/description/) | [Python](392_Is_Subsequence.py)| O(N) | O(1) | Easy |Pointers| |
 | 26 | [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/) | [Python](26_Remove_Duplicates_Sorted_Array.py)| O(N) | O(1) | Easy |Pointers| |
-| 80 | [Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/) | [Python](80_Remove_Duplicates_Sorted_Array_II.py)| O(N) | O(1) | Medium |Pointers| |
+| 80 | [Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/) | [Python](80_Remove_Duplicates_Sorted_Array_II.py)| O(N) | O(1) | Medium |Pointers| Smart |
