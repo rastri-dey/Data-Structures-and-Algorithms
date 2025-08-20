@@ -90,4 +90,37 @@ class Solution:
                 box[b].add(val)
 
         return True
-        
+
+# Approach: Hash Set (Another)
+# Time: O(N^2)
+# Space: O(N^2)
+class Solution:
+    def isValidSudoku(self, board: List[List[str]]) -> bool:
+        n = 9
+        row = [[0]*n for _ in range(n)]
+        col = [[0]*n for _ in range(n)]
+        box = [[0]*n for _ in range(n)]
+
+        for r in range(n):
+            for c in range(n):
+                val = board[r][c]
+                if (val=="."):
+                    continue
+
+                pos = int(val)-1
+
+                if (row[r][pos]==1):
+                    return False
+                row[r][pos] = 1
+
+                if (col[c][pos]==1):
+                    return False
+                col[c][pos] = 1
+
+                b = (r//3)*3 + c//3
+
+                if (box[b][pos]==1):
+                    return False
+                box[b][pos] = 1
+
+        return True
