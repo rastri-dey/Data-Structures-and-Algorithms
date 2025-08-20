@@ -94,6 +94,7 @@ class Solution:
 # Approach: Hash Set (Another)
 # Time: O(N^2)
 # Space: O(N^2)
+    
 class Solution:
     def isValidSudoku(self, board: List[List[str]]) -> bool:
         n = 9
@@ -123,4 +124,46 @@ class Solution:
                     return False
                 box[b][pos] = 1
 
+        return True
+
+# Approach: Bitmasking
+# Time: O(N^2)
+# Space: O(N)
+
+class Solution:
+    def isValidSudoku(self, board: List[List[str]]) -> bool:
+        n = 9
+        row = [0]*n
+        col = [0]*n
+        box = [0]*n
+
+        for r in range(n):
+            for c in range(n):
+                val = board[r][c]
+                if (val=="."):
+                    continue
+
+                pos = int(val)-1
+
+                # Leftshift 1 by pos bits and do AND to check               
+                # if there is an existing 1 set bit in that position
+
+                if (row[r] & (1<<pos)):
+                    return False
+
+                # Leftshift 1 by pos bits and do OR as the number
+                # is found - to set that bit position
+
+                row[r] |= (1<<pos) 
+
+                if(col[c] & (1<<pos)):
+                    return False
+                col[c] |= (1<<pos) # Adding (Setting) the found no. 
+
+                b = (r//3)*3 + (c//3)
+
+                if(box[b] & (1<<pos)):
+                    return False
+                box[b] |= (1<<pos) # Adding (Setting) the found no.
+        
         return True
