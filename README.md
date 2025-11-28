@@ -1,5 +1,5 @@
 # Data Structures & Algorithms
-This is the solutions page to Leetcode problems. It covers the usage of Trees, Graphs, Binary Search, Dynamic Programming etc. The table below illustrates the code details further:
+Implementations of fundamental data structures and algorithms (in Python and C++), designed for common algorithmic problems on Dynamic Programming, String manipulation, Tree/Graph traversals.
 
 | # | Problem | Solution | Time | Space | Diffculty | Strategy | Notes |
 | --- | --- | --- | --- | --- | --- | --- | --- |
